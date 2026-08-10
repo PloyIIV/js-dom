@@ -24,3 +24,6 @@ fruits.forEach((i) => console.log(i.textContent))
 // using querySelector('[data-fresh="false"]') and log its textContent.
 const dataFreshElement = document.querySelector('[data-fresh="false"]')
 console.log(dataFreshElement.textContent)
+// 
+
+console.log(document.getElementById('log-btn').textContent)
