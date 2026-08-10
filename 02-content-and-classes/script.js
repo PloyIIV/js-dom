@@ -24,5 +24,5 @@ console.log(card.classList)
 // TODO 5: #card starts with a data-visits="0" attribute. Read the current
 // value with card.dataset.visits, convert it to a number, add 1, write it
 // back to card.dataset.visits, and console.log() the new value.
-card.dataset.visits = 1
+card.dataset.visits = Number(card.dataset.visits) + 1
 console.log(card.dataset.visits)
