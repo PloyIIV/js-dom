@@ -23,7 +23,7 @@ function updateCount() {
 itemBtn.addEventListener('click', () => {
     // console.log(itemInput.value)
     let itemLi = document.createElement('li')
-    itemLi.textContent = itemInput.value.trim()
+    // itemLi.textContent = itemInput.value.trim()
     itemLi.innerHTML = `${itemInput.value.trim()} <button>Remove</button>`
     if(!itemInput.value.trim() == '') {
         itemUl.prepend(itemLi)
