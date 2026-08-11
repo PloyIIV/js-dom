@@ -1,0 +1,31 @@
+body {
+    height: 100svh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYU3tt2xSNUMOHKshkWNNhpG3fguDcvXaxhIAahaWfxumwjmKJTpJK1T8&s=10');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeDiv {
+    background-color: #ffffff56;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align: center;
+    width: 450px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.pokeDiv span {
+    font-weight: 700;
+}
+
+.poke-img {
+    border: 3px solid black;
+    border-radius: 100px;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.333), rgba(255, 255, 0, 0.381));
+}
