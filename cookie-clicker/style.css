@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: "Tiny5", system-ui;
+}
+
+h1 {
+    /* font-family: "Tiny5", system-ui; */
+    color: black;
+    font-size: 50px;
+}
+
+section {
+    width: 640px;
+    height: 100vh;
+    border: 1px solid white;
+}
+
+.sec-1 header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.445);
+    backdrop-filter: blur(10px);
+}
+
+.character {
+    position: relative;
+    bottom: -220px;
+}
+.character:hover {
+    transform: scale(1.05);
+}
+.character:active {
+    transform: scale(0.9);
+}
+
+.maple-background {
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 620px;
+    object-fit: cover;
+}
+
+.sec-1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-1 footer {
+    position: relative;
+    top: 300px;
+    width: 80%;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.35);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.sec-1 p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sec-1 span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/* SECTION 2 */
+
+.sec-2 {
+    background: #82f0ff;
+    background: radial-gradient(farthest-corner at 100% 20%,rgba(130, 240, 255, 1) 0%, rgba(45, 152, 253, 1) 100%);}
+
+/* SECTION 3 */
+
+.sec-3-background {
+    height: 100%;
+    width: 620px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+    filter: blur(5px);
+}
+
+.sec-3 h3 {
+    font-size: 30px;
+    margin: 30px;
+    color: white;
+}
+
+.skill-div img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid rgb(105, 105, 105);
+    border-radius: 15px;
+    background-color: white;
+}
+
+.skill-div {
+    background-color: rgba(255, 255, 255, 0.671);
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.skill-div:hover {
+    border-color: rgb(0, 153, 255);
+    background-color: rgba(211, 231, 255, 0.671);
+}
+
+.skill-detail {
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-detail hr {
+    margin: 10px 0;
+    border: 1px solid rgb(138, 138, 138);
+    border-style: dashed;
+}
+
+/* https://mir-s3-cdn-cf.behance.net/project_modules/1400/588a44195922117.66168b374ece8.gif */
