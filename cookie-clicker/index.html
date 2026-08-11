@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Clicker</title>
+    <title>MapleStory Clicker</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +20,35 @@
             <footer>
                 <p>Character name: <span class="username">PloyIIV</span></p>
                 <p>Click: <span class="click-count"></span></p>
-                <p>Per Second: <span class="second-count"></span></p>
+                <p>EXP / Second: <span class="exp-count"></span></p>
+                <p>POWER: <span class="power-count"></span> Forces / Click</p>
             </footer>
         </div>
         <img class="maple-background" src="./assets/background.gif" alt="MapleStory background">
     </section>
     <section class="sec-2">
-        <div></div>
+        <h2>CHARACTER STATS</h2>
+        <div class="status-info">
+            <p><span class="skill-name">Level: </span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">EXP: </span><span class="skill-value exp">0</span></p>
+            <p><span class="skill-name">Class: </span><span class="skill-value">J. Software Developer</span></p>
+            <p><span class="skill-name">Guild: </span><span class="skill-value">Generation Thailand</span></p>
+            <hr style="border: 3px solid rgb(185, 185, 185); width: 95%; margin: 10px 0;">
+            <p><span class="skill-name">HTML</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">CSS</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">ReactJS</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">NodeJS</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">ExpressJS</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">SQL</span><span class="skill-value">1</span></p>
+            <p><span class="skill-name">NoSQL</span><span class="skill-value">1</span></p>
+            <button>RESET</button>
+            <h2 style="width: 100%; margin: 15px 0;">SKILLS</h2>
+            <div class="status-skill-container">
+                <div class="status-skill">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNDBZfgckKR4zwY-cMVXEWcxUQ3g5vdQP8WEj8_N3Nw&s=10" alt="snail">
+                </div>
+            </div>
+        </div>
     </section>
     <section class="sec-3">
         <div>
@@ -33,44 +56,44 @@
             <hr style="border: 2.5px solid white; margin-bottom: 20px;">
         </div>
         <div class="skill-container">
-            <div class="skill-div">
+            <div class="skill-div snail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNDBZfgckKR4zwY-cMVXEWcxUQ3g5vdQP8WEj8_N3Nw&s=10" alt="snail">
+                <div class="skill-detail">
+                    <h4>RED SNAIL</h4>
+                    <hr>
+                    <p>+1 Click Power</p>
+                </div>
+            </div>
+            <div class="skill-div slime">
                 <img src="https://www.pngitem.com/pimgs/m/12-127350_maplestory-slime-hd-png-download.png" alt="slime">
                 <div class="skill-detail">
                     <h4>SLIME</h4>
                     <hr>
-                    <p>+1 Click Power</p>
+                    <p>+1 Auto/Second</p>
                 </div>
             </div>
-            <div class="skill-div">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNDBZfgckKR4zwY-cMVXEWcxUQ3g5vdQP8WEj8_N3Nw&s=10" alt="snail">
-                <div class="skill-detail">
-                    <h4>FIREFLY</h4>
-                    <hr>
-                    <p>+1 Click Power</p>
-                </div>
-            </div>
-            <div class="skill-div">
+            <div class="skill-div mushroom">
                 <img src="https://i.pinimg.com/736x/ac/31/f3/ac31f3929a56737c91030dbd553efa80.jpg" alt="mushroom">
                 <div class="skill-detail">
-                    <h4>FIREFLY</h4>
+                    <h4>MUSHROOM</h4>
                     <hr>
-                    <p>+1 Click Power</p>
+                    <p>+50 Auto/Second</p>
                 </div>
             </div>
-            <div class="skill-div">
+            <div class="skill-div trunk">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36hm_Qp0FoUdEqMPIkXdvzh4JRXFSZUIegAGHfXiA&s=10" alt="trunk">
                 <div class="skill-detail">
-                    <h4>FIREFLY</h4>
+                    <h4>TRUNK</h4>
                     <hr>
-                    <p>+1 Click Power</p>
+                    <p>+100 Auto/Second</p>
                 </div>
             </div>
-            <div class="skill-div">
+            <div class="skill-div firefly">
                 <img src="https://static.vecteezy.com/system/resources/previews/070/959/373/non_2x/pixel-art-firefly-with-glowing-abdomen-on-transparent-background-illustration-png.png" alt="firefly">
                 <div class="skill-detail">
                     <h4>FIREFLY</h4>
                     <hr>
-                    <p>+1 Click Power</p>
+                    <p>+10000 Auto/Second</p>
                 </div>
             </div>
             

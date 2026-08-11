@@ -80,8 +80,77 @@ section {
 /* SECTION 2 */
 
 .sec-2 {
-    background: #82f0ff;
-    background: radial-gradient(farthest-corner at 100% 20%,rgba(130, 240, 255, 1) 0%, rgba(45, 152, 253, 1) 100%);}
+    background: #c9c9c9;
+    /* background: radial-gradient(farthest-corner at 100% 20%,rgba(130, 240, 255, 1) 0%, rgba(45, 152, 253, 1) 100%); */
+    font-size: 18px;
+}
+
+.sec-2 h2 {
+    text-align: center;
+    /* background-color: bisque; */
+    background: radial-gradient(farthest-corner at 100% 20%,rgba(130, 240, 255, 1) 0%, rgba(45, 152, 253, 1) 100%);;
+    padding: 40px;
+    font-size: 30px;
+    border-bottom: 2px solid burlywood;
+}
+
+.status-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.status-info p {
+    margin-bottom: 3px;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+    border: 3px solid green;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(rgb(161, 223, 48) 0%, rgb(87, 150, 6) 100%);
+}
+.skill-value {
+    display: inline-block;
+    width: 480px;
+    padding: 5px;
+    padding-left: 15px;
+    border: 3px solid rgb(148, 147, 147);
+    border-radius: 0 10px 10px 0;
+    background: white;
+}
+
+.status-info button {
+    font-family: "Tiny5", system-ui;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 0 #ffae01, -2px 0 #ffae01, 0 2px #ffae01, 0 -2px #ffae01,
+             1px 1px #ffae01, -1px -1px #ffae01, 1px -1px #ffae01, -1px 1px #ffae01;
+    background: linear-gradient(rgb(255, 230, 3) 0%, rgb(255, 196, 0) 100%);
+}
+
+.status-info button:hover {
+    border: 2px solid rgb(255, 136, 0);
+    background: linear-gradient(rgb(255, 188, 3) 0%, rgb(255, 145, 0) 100%);
+}
+
+.status-skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid rgb(88, 88, 88);
+    border-radius: 15px;
+}
 
 /* SECTION 3 */
 
@@ -122,7 +191,7 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.skill-div:hover {
+.skill-div:hover, .skill-div:hover img  {
     border-color: rgb(0, 153, 255);
     background-color: rgba(211, 231, 255, 0.671);
 }
