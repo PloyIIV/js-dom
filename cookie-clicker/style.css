@@ -77,6 +77,15 @@ section {
     margin-left: 10px;
 }
 
+.buy-skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-skill span {
+    color: rgb(199, 2, 2);
+    font-weight: 700;
+}
 /* SECTION 2 */
 
 .sec-2 {

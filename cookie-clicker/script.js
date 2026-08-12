@@ -67,13 +67,48 @@ mushroom.addEventListener('click', () => {
     }
 })
 
+trunk.addEventListener('click', () => {
+    if(localStorage.getItem('count') >= 500) {
+        localStorage.setItem('count', localStorage.getItem('count')-500)
+        countTrunk();
+        document.querySelector('.click-count').textContent = localStorage.getItem('count')
+    }
+})
+
+firefly.addEventListener('click', () => {
+    if(localStorage.getItem('count') >= 500) {
+        localStorage.setItem('count', localStorage.getItem('count')-500)
+        countFirefly();
+        document.querySelector('.click-count').textContent = localStorage.getItem('count')
+    }
+})
+
 function countSlime() {
     expCount = expCount + 1
     document.querySelector('.exp-count').textContent = expCount
+    localStorage.setItem('exp', expCount)
+    document.querySelector('.exp').textContent = localStorage.getItem('exp')
     setTimeout(countSlime, 1000);
 }
 function countMushroom() {
     expCount = expCount + 50
     document.querySelector('.exp-count').textContent = expCount
+    localStorage.setItem('exp', expCount)
+    document.querySelector('.exp').textContent = localStorage.getItem('exp')
     setTimeout(countMushroom, 1000);
 }
+function countTrunk() {
+    expCount = expCount + 100
+    document.querySelector('.exp-count').textContent = expCount
+    localStorage.setItem('exp', expCount)
+    document.querySelector('.exp').textContent = localStorage.getItem('exp')
+    setTimeout(countTrunk, 1000);
+}
+function countFirefly() {
+    expCount = expCount + 10000
+    document.querySelector('.exp-count').textContent = expCount
+    localStorage.setItem('exp', expCount)
+    document.querySelector('.exp').textContent = localStorage.getItem('exp')
+    setTimeout(countFirefly, 1000);
+}
+
