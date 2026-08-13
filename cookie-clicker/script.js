@@ -42,19 +42,31 @@ const snail = document.querySelector('.snail')
 const mushroom = document.querySelector('.mushroom')
 const trunk = document.querySelector('.trunk')
 
+let countSkillSnail = 0;
+let countSkillSlime = 0;
+let countSkillMushroom = 0;
+let countSkillTrunk = 0;
+let countSkillFirefly = 0;
+
 snail.addEventListener('click', () => {
     if(localStorage.getItem('count') >= 10) {
         localStorage.setItem('count', localStorage.getItem('count') - 10)
+        countSkillSnail++
         countClick = countClick + 1
     }
+    document.querySelector('.skill-snail').classList.remove('hidden')
+    document.querySelector('.count-skill-1').textContent = countSkillSnail
     document.querySelector('.click-count').textContent = localStorage.getItem('count')
     powerClick.textContent = countClick
 })
 
 slime.addEventListener('click', () => {
-    if(localStorage.getItem('count') >= 50) {
-        localStorage.setItem('count', localStorage.getItem('count')-50)
+    if(localStorage.getItem('count') >= 100) {
+        localStorage.setItem('count', localStorage.getItem('count')-100)
         countSlime();
+        countSkillSlime++
+        document.querySelector('.skill-slime').classList.remove('hidden')
+        document.querySelector('.count-skill-2').textContent = countSkillSlime
         document.querySelector('.click-count').textContent = localStorage.getItem('count')
     }
 })
@@ -63,22 +75,31 @@ mushroom.addEventListener('click', () => {
     if(localStorage.getItem('count') >= 500) {
         localStorage.setItem('count', localStorage.getItem('count')-500)
         countMushroom();
+        countSkillMushroom++
+        document.querySelector('.skill-mushroom').classList.remove('hidden')
+        document.querySelector('.count-skill-3').textContent = countSkillMushroom
         document.querySelector('.click-count').textContent = localStorage.getItem('count')
     }
 })
 
 trunk.addEventListener('click', () => {
-    if(localStorage.getItem('count') >= 500) {
-        localStorage.setItem('count', localStorage.getItem('count')-500)
+    if(localStorage.getItem('count') >= 5000) {
+        localStorage.setItem('count', localStorage.getItem('count')-5000)
         countTrunk();
+        countSkillTrunk++
+        document.querySelector('.skill-trunk').classList.remove('hidden')
+        document.querySelector('.count-skill-4').textContent = countSkillTrunk
         document.querySelector('.click-count').textContent = localStorage.getItem('count')
     }
 })
 
 firefly.addEventListener('click', () => {
-    if(localStorage.getItem('count') >= 500) {
-        localStorage.setItem('count', localStorage.getItem('count')-500)
+    if(localStorage.getItem('count') >= 10000) {
+        localStorage.setItem('count', localStorage.getItem('count')-10000)
         countFirefly();
+        countSkillFirefly++
+        document.querySelector('.skill-firefly').classList.remove('hidden')
+        document.querySelector('.count-skill-5').textContent = countSkillFirefly
         document.querySelector('.click-count').textContent = localStorage.getItem('count')
     }
 })
