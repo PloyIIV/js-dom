@@ -105,6 +105,18 @@ firefly.addEventListener('click', () => {
     }
 })
 
+let lvl = 1;
+let lvlScale = 1.25
+let baseExp = 120;
+setInterval(() => {
+    if(localStorage.getItem('exp') >= baseExp) {
+        localStorage.setItem('exp', localStorage.getItem('exp') - 1)
+        lvl++
+        baseExp = baseExp * lvlScale
+        document.querySelector('.lvl').textContent = lvl
+    }
+}, 1000);
+
 function countSlime() {
     expCount = expCount + 1
     document.querySelector('.exp-count').textContent = expCount
