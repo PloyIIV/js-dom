@@ -28,6 +28,7 @@ character.addEventListener('mouseup', () => {
 const resetCount = document.querySelector('.status-info button')
 resetCount.addEventListener('click', () => {
     localStorage.removeItem('count')
+    localStorage.removeItem('exp')
     document.querySelector('.click-count').textContent = 0
     document.querySelector('.exp').textContent = 0
     countClick = 1
@@ -53,11 +54,11 @@ snail.addEventListener('click', () => {
         localStorage.setItem('count', localStorage.getItem('count') - 10)
         countSkillSnail++
         countClick = countClick + 1
+        document.querySelector('.skill-snail').classList.remove('hidden')
+        document.querySelector('.count-skill-1').textContent = countSkillSnail
+        document.querySelector('.click-count').textContent = localStorage.getItem('count')
+        powerClick.textContent = countClick
     }
-    document.querySelector('.skill-snail').classList.remove('hidden')
-    document.querySelector('.count-skill-1').textContent = countSkillSnail
-    document.querySelector('.click-count').textContent = localStorage.getItem('count')
-    powerClick.textContent = countClick
 })
 
 slime.addEventListener('click', () => {
@@ -132,4 +133,3 @@ function countFirefly() {
     document.querySelector('.exp').textContent = localStorage.getItem('exp')
     setTimeout(countFirefly, 1000);
 }
-

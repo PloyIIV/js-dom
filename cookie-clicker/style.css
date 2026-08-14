@@ -15,7 +15,7 @@ h1 {
 }
 
 section {
-    width: 640px;
+    width: 33.33%;
     height: 100vh;
     border: 1px solid white;
 }
@@ -257,5 +257,8 @@ section {
 @media (max-width: 1000px) {
     .sec-2 {
         display: none;
+    }
+    section {
+        width: 100/2;
     }
 }
