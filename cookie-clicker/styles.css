@@ -231,6 +231,15 @@ footer p:nth-child(4) {
     border-style: dashed;
 }
 
+.buy-skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-skill span {
+    color: red;
+}
+
 @media (max-height: 860px) {
     .status-info p:nth-child(10),.status-info p:nth-child(11), .status-info p:nth-child(12) {
         display: none;
